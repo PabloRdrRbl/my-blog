@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Jugando con mi Nexus 4 - Escribo las cosas que no quiero olvidar.</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/images/blog/favicon.jpg" rel="icon">
+
+<link rel="canonical" href="/jugando-con-mi-nexus-4.html">
+
+        <meta name="author" content="Pablo Rodríguez Robles" />
+        <meta name="keywords" content="Android,root" />
+        <meta name="description" content="Mi Nexus 4 ya va teniendo su edad (3 años) y desde hace un tiempo ya no flasheo nuevas roms con la frecuencia que lo hacía al principio. Aprovechando que esta semana me he dignado ha pasarme a Android 6 y que me he juntado con mi amigo Javi para ..." />
+
+        <meta property="og:site_name" content="Escribo las cosas que no quiero olvidar." />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Jugando con mi Nexus 4"/>
+        <meta property="og:url" content="/jugando-con-mi-nexus-4.html"/>
+        <meta property="og:description" content="Mi Nexus 4 ya va teniendo su edad (3 años) y desde hace un tiempo ya no flasheo nuevas roms con la frecuencia que lo hacía al principio. Aprovechando que esta semana me he dignado ha pasarme a Android 6 y que me he juntado con mi amigo Javi para ..."/>
+        <meta property="article:published_time" content="2016-01-23" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="Android" />
+            <meta property="article:tag" content="root" />
+            <meta property="article:author" content="Pablo Rodríguez Robles" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/solarizeddark.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">
+Escribo las cosas que no quiero olvidar.            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/jugando-con-mi-nexus-4.html"
+                       rel="bookmark"
+                       title="Permalink to Jugando con mi Nexus 4">
+                        Jugando con mi Nexus 4
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-01-23T12:21:00+01:00"> sáb 23 enero 2016</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/android.html">Android</a>
+        /
+	<a href="/tag/root.html">root</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Mi Nexus 4 ya va teniendo su edad (3 años) y desde hace un tiempo ya no flasheo nuevas roms con la frecuencia que lo hacía al principio. Aprovechando que esta semana me he dignado ha pasarme a Android 6 y que me he juntado con mi amigo Javi para poner al día sendos mako, he querido dejar por escrito cuál es el procedimiento que uso para dejar mi móvil al borde del brick.</p>
+<p>Tanto en <a href="http://htcmania.com">HTCMania</a> como en <a href="http://xda-developers.com">XDA Developers</a> (lugares tan sagrados para mí durante algún tiempo) se pueden encontrar distintos métodos para hacer esto. A lo largo de estos años yo me he quedado con el que mayor compatibilidad tiene en Mac OS/Linux, además de usar la terminal, que siempre es más hacker.</p>
+<p>Actualmente llevo la versión 5.1.1 de Android con la ROM XenonHD (versión: 08/20/2015) junto con el kernel Hellscore (versión: b73-CM).</p>
+<p>Tras pasar un rato por HTCMania y XDA he elegido la siguiente combinación buscando algo estable que dure bastante:</p>
+<ul>
+<li><strong>ROM:</strong> Chroma 01/18/2016 (<a href="http://forum.xda-developers.com/nexus-4/development/rom-chroma-03-31-2015-layers-t3069936">enlace a XDA</a>).</li>
+<li>Por ahora estoy con el <strong>kernel</strong> que la ROM trae por defecto a la espera de ver cómo rinde y poder comparar con el que ponga.</li>
+</ul>
+<h3>Transfiriendo los archivos viejos hasta nuestro ordenador</h3>
+<p>Antes de empezar hemos de recordar que el proceso completo (supondremos que partimos como si el teléfono está de fábrica) borrará todos los datos. Así que antes debemos pasar todos los datos al ordenador.</p>
+<p><strong>IMPORTANTE:</strong> solo se pasarán los archivos como fotos, vídeos, conversaciones de WhatsApp… no así los datos de las aplicaciones ni ninguna configuración del dispositivo.</p>
+<p>Usaremos las <code>nexus-tools</code> para acceder a <strong>Android File Transfer</strong> (adb) desde la terminal. <code>nexus-tools</code> se puede descargar en el siguiente enlace:</p>
+<blockquote>
+<p><a href="https://github.com/corbindavenport/nexus-tools">https://github.com/corbindavenport/nexus-tools</a></p>
+</blockquote>
+<p>Para instalar la herramienta solo necesitamos el comando:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> bash <span class="o">(</span>curl -s https://raw.githubusercontent.com/corbindavenport/nexus-tools/master/install.sh<span class="o">)</span>
+</pre></div>
+
+
+<p>Creamos una carpeta donde guardar los datos:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mkdir copia_datos_nexus
+</pre></div>
+
+
+<p>Tras habilitar <code>adb</code> en las opciones de desarrollo, comprobamos que el ordenador reconoce nuestro dispositivo utilizando el comando <code>adb devices</code>, tras el que recibiremos como resultado algo parecido a este mensaje:</p>
+<div class="highlight"><pre><span></span><span class="go">  List of devices attached</span>
+<span class="go">  00895e64d40es4c6 device</span>
+</pre></div>
+
+
+<p>Y después transferimos todos los archivos de la tarjeta sd virtual a nuestro ordenador:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> adb pull /storage/sdcard0/ &lt;carpeta destino&gt;
+</pre></div>
+
+
+<p>Por ejemplo <code>adb pull /storage/sdcard0/ copia_datos_nexus</code>.</p>
+<p>El proceso puede tardar en función de cómo esté de lleno nuestro teléfono. Antes de seguir es recomendable que comprobemos que todo está en la carpeta de destino.</p>
+<h3>Desbloqueando el bootloader</h3>
+<p>En este caso yo empleo el script <strong>Universal Nexus Linux Toolkit</strong>, el cual se puede descargar en este enlace:</p>
+<blockquote>
+<p><a href="http://forum.xda-developers.com/nexus-4/orig-development/linux-universal-nexus-linux-toolkit-v2-t1999065">http://forum.xda-developers.com/nexus-4/orig-development/linux-universal-nexus-linux-toolkit-v2-t1999065</a></p>
+</blockquote>
+<p>Existen versiones compatibles con Linux y con OS X. Lo descargamos y:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> bash unltlauncherosx100.sh
+</pre></div>
+
+
+<p>Seleccionamos el dispositivo y el modo automático:</p>
+<p><img alt="Terminal image 1" src="/images/nexus_4/terminal-1.jpg" /></p>
+<p><img alt="Terminal image 2" src="/images/nexus_4/terminal-2.jpg" /></p>
+<p>Primero desbloquearemos el bootloader, para ello entramos en el modo fastboot (encender presionando la tecla de bajar el volumen) y en Universal Nexus Linux Toolkit seleccionamos la opción 1.</p>
+<p><img alt="Terminal image 3" src="/images/nexus_4/terminal-3.jpg" /></p>
+<p>Con las teclas de volumen para subir y bajar y con el botón de encendido para confirmar escogemos <code>Sí</code> (desbloquear). El teléfono se reiniciará y después de una pantalla de carga se cargará el sistema operativo.</p>
+<p>Para instalar <strong>TWRP</strong> descargaremos la última versión en su página web:</p>
+<blockquote>
+<p><a href="https://dl.twrp.me/mako/">https://dl.twrp.me/mako/</a></p>
+</blockquote>
+<p>Y desde el fastboot introducimos en el terminal:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> adb reboot bootloader
+<span class="gp">$</span> fastboot flash recovery twrp-2.8.7.0-mako.img
+</pre></div>
+
+
+<p>Ya estamos listos para instalar nuestra rom.</p>
+<h3>Instalando ROMs desde adb sideload</h3>
+<p>Desde el recovery entramos en el <code>adb sideload</code>, para hacer la instalación en limpio marcaremos las opciones de <code>wipe</code> (última imagen).</p>
+<p><img alt="Nexus image 1" src="/images/nexus_4/recovery-1.jpg" /></p>
+<p><img alt="Nexus image 2" src="/images/nexus_4/recovery-2.jpg" /></p>
+<p><img alt="Nexus image 3" src="/images/nexus_4/recovery-3.jpg" /></p>
+<p><img alt="Nexus image 4" src="/images/nexus_4/recovery-4.jpg" /></p>
+<p>Y una vez descargado todo lo necesario (ROM y <strong>GApps</strong>, las cuales están en el mismo post que la ROM) introducimos:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> adb sideload &lt;ruta de la ROM&gt;
+</pre></div>
+
+
+<p>Y cuando esta se haya instalado:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> adb sideload &lt;ruta de las GApps&gt;
+</pre></div>
+
+
+<p>La ROM ya está instalada, ahora solamente tenemos que reiniciar el teléfono y configurarlo.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="images/blog/profile.jpg"/>
+        </p>
+    <p>
+        <strong>About Pablo Rodríguez Robles</strong><br/>
+        
+           Mi nombre es Pablo Rodríguez Robles y estudio Ingeniería Aeroespacial
+           
+    </p>
+</div>
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="http://twitter.com/PabloRdrRbl"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                <li class="list-group-item"><a href="https://es.linkedin.com/in/pablordrrbl"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+                <li class="list-group-item"><a href="http://github.com/PabloRdrRbl"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+
+    <li class="list-group-item"><h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
+        <div id="gh_repos">
+            <p class="list-group-item">Status updating...</p>
+        </div>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Pablo Rodríguez Robles
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+    <script src="/theme/js/bodypadding.js"></script>
+    <!-- GitHub JS -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (!window.jXHR) {
+                var jxhr = document.createElement('script');
+                jxhr.type = 'text/javascript';
+                jxhr.src = '/theme/js/jXHR.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(jxhr, s);
+            }
+
+            github.showRepos({
+                user: 'pablordrrbl',
+                count: 5,
+                skip_forks: false,
+                target: '#gh_repos'
+            });
+        });
+    </script>
+    <script src="/theme/js/github.js" type="text/javascript"></script>
+    <!-- End GitHub JS Code -->
+
+</body>
+</html>
