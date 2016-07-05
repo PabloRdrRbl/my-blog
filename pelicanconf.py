@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -6,7 +6,7 @@ AUTHOR = 'Pablo Rodríguez Robles'
 SITENAME = 'Escribo las cosas que no quiero olvidar.'
 #SITEURL = 'pablorrobles.com'
 
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'extra/CNAME']
@@ -37,7 +37,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['render_math']
 
 # Different plugin settings
-MATH_JAX = {'color': 'blue', 'align': 'left'}
+MATH_JAX = {'color': 'black', 'align': 'center'}
 
 # Theming
 THEME = 'pelican-bootstrap3'
