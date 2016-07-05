@@ -23,7 +23,7 @@ Authors: Pablo Rodríguez Robles
 def make_entry(title):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_create = "../content/{}_{:0>2}_{:0>2}_{}.rst".format(
+    f_create = "../content/{}_{:0>2}_{:0>2}_{}.md".format(
         today.year, today.month, today.day, slug)
     t = TEMPLATE.strip().format(title=title,
                                 hashes='#' * len(title),
