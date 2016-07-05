@@ -29,7 +29,7 @@ YASnippet no viene con plantillas por decfecto, por lo que tendremos que instala
 
 Debemos colocar las platillas descargadas en un lugar donde Emacs pueda verlas. En mi caso lo he hecho dentro de la carpeta de los archivos de configuración de Emacs aunque en principio no sería necesario. Dentro he creado dos carpetas `my-snippets` donde irán colocadas las que yo quiera añadir en el futuro y `yasnippet-snippets` donde están las de Andrea.
 
-```
+```text
 .emacs.d
 ├── <resto de carpetas>
 └── snippets
@@ -38,7 +38,7 @@ Debemos colocar las platillas descargadas en un lugar donde Emacs pueda verlas. 
         └── <plantillas de Andrea>
 ```
 
-### Configurando YASnippet
+### Configurando YASnippet
 
 Tan solo hemos de añadir unas líneas de código en nuestro fichero ìnit.el` que nos permitirán poder empezar a usar nuestras plantillas.
 
