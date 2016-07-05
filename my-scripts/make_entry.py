@@ -8,15 +8,13 @@ import sys
 from datetime import datetime
 
 TEMPLATE = """
-{title}
-{hashes}
-
-:date: {year}-{month}-{day} {hour}:{minute:02d}
-:tags:
-:category:
-:slug: {slug}
-:summary:
-:status: draft
+Title: {title}
+Date: {year}-{month}-{day} {hour}:{minute:02d}
+Modified: {year}-{month}-{day} {hour}:{minute:02d}
+Category:
+Tags: 
+Slug: {slug}
+Authors: Pablo Rodríguez Robles
 
 
 """
@@ -41,7 +39,6 @@ def make_entry(title):
 
 
 if __name__ == '__main__':
-
     if len(sys.argv) > 1:
         make_entry(sys.argv[1])
     else:
