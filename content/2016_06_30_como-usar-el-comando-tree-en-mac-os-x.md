@@ -9,6 +9,8 @@ Authors: Pablo Rodríguez Robles
 
 El usuario inexperto de la terminal OS X/Linux habrá llevado a cabo la secuencia `cd` - `ls` - `cd` - `ls`… en busca de saber que es lo que habita en los directorios de su ordenador. Pero esta no es la opción más rápida ni la que proporciona una visión general de la estructura de cualquiera de nuestros proyectos.
 
+<!-- PELICAN_END_SUMMARY -->
+
 Este puede ser un ejemplo del resultado que tiene el comando `tree <directorio>`. El uso de este comando no es recomendable cunado los directorios explorados son demasiado grandes puesto que la infromación proporcionada será inútil dado el esperpento que resulta de mostrar, por ejemplo, el árbol de directorios de `/home`.
 
 

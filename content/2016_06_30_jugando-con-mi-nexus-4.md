@@ -9,6 +9,8 @@ Authors: Pablo Rodríguez Robles
 
 Mi Nexus 4 ya va teniendo su edad (3 años) y desde hace un tiempo ya no flasheo nuevas roms con la frecuencia que lo hacía al principio. Aprovechando que esta semana me he dignado ha pasarme a Android 6 y que me he juntado con mi amigo Javi para poner al día sendos mako, he querido dejar por escrito cuál es el procedimiento que uso para dejar mi móvil al borde del brick.
 
+<!-- PELICAN_END_SUMMARY -->
+
 Tanto en [HTCMania](http://htcmania.com) como en [XDA Developers](http://xda-developers.com) (lugares tan sagrados para mí durante algún tiempo) se pueden encontrar distintos métodos para hacer esto. A lo largo de estos años yo me he quedado con el que mayor compatibilidad tiene en Mac OS/Linux, además de usar la terminal, que siempre es más hacker.
 
 Actualmente llevo la versión 5.1.1 de Android con la ROM XenonHD (versión: 08/20/2015) junto con el kernel Hellscore (versión: b73-CM).
@@ -98,13 +100,13 @@ Ya estamos listos para instalar nuestra rom.
 
 Desde el recovery entramos en el `adb sideload`, para hacer la instalación en limpio marcaremos las opciones de `wipe` (última imagen).
 
-![Nexus image 1]({attach}images/nexus_4/recovery-1.jpg)
+![Recovery image 1]({attach}images/nexus_4/recovery-1.jpg){: .center-image }
 
-![Nexus image 2]({attach}images/nexus_4/recovery-2.jpg)
+![Recovery image 2]({attach}images/nexus_4/recovery-2.jpg){: .center-image }
 
-![Nexus image 3]({attach}images/nexus_4/recovery-3.jpg)
+![Recovery image 3]({attach}images/nexus_4/recovery-3.jpg){: .center-image }
 
-![Nexus image 4]({attach}images/nexus_4/recovery-4.jpg)
+![Recovery image 4]({attach}images/nexus_4/recovery-4.jpg){: .center-image }
 
 Y una vez descargado todo lo necesario (ROM y **GApps**, las cuales están en el mismo post que la ROM) introducimos:
 

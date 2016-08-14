@@ -5,6 +5,7 @@ Category:
 Tags: Python, Scipy, Estadística
 Slug: regresion-lineal-basica-con-python
 Authors: Pablo Rodríguez Robles
+Status: draft
 
 
 Esta es una entrada cortita que siempre he querido hacer. En cualquier práctica de laboratorio puede que tengamos que hacer algo tan sencillo como una regresión lineal. Esto es algo muy fácil de hacer en Python, veamos cómo.

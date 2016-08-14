@@ -5,6 +5,7 @@ Category:
 Tags: Emacs
 Slug: usando-plantillas-en-emacs
 Authors: Pablo Rodríguez Robles
+Status: draft
 
 
 Si me conoces seguramente te habré hablado sobre mi aficción por Emacs, si no, a lo largo de la que pretende ser una serie de entradas como esta intentaré que veas cuánto me gusta y con un poco de suerte conseguiré contagiarte.
