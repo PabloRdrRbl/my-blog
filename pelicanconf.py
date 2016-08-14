@@ -10,12 +10,14 @@ SITEURL = ''
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'images/blog', 'extra/CNAME', 'extra/custom.css']
+STATIC_PATHS = ['images', 'images/blog', 'extra/CNAME',
+                'extra/custom.css', 'extra/robots.txt']
 
 # Tell pelican where it should copy that file to in your output folder
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/custom.css'},
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
 
 TIMEZONE = 'Europe/Paris'
