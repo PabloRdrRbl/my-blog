@@ -29,5 +29,5 @@ Additionally, I love reading about decision-making, problem-solving, history of 
 
 ## Why Spanish?
 
-The reason why I write this blog in Spanish is not that complex. The purpose of this blog is to put down _in paper_ some little thigs I learn and consider interesting but I forget because they aren't used for some time. Such as code snippets, live hacks, dayly thoughts... So, given that it is _for me_ and that I only use the blog to remember and learn more I prefer to write in Spanish and bring diversity to the Internet with more content in my mother tongue.
+The reason why I write this blog in Spanish is not that complex. The purpose of this blog is to put down _in paper_ some little thigs I learn and consider interesting but I forget because they aren't used for some time. Such as code snippets, life hacks, dayly thoughts... So, given that it is _for me_ and that I only use the blog to remember and learn more I prefer to write in Spanish and bring diversity to the Internet with more content in my mother tongue.
 
