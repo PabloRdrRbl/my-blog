@@ -14,7 +14,8 @@ STATIC_PATHS = ['images', 'images/blog', 'extra/CNAME', 'extra/custom.css']
 
 # Tell pelican where it should copy that file to in your output folder
 EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'static/custom.css'}
+    'extra/custom.css': {'path': 'static/custom.css'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 TIMEZONE = 'Europe/Paris'
