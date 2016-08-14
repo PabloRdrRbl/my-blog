@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 
 AUTHOR = 'Pablo Rodríguez Robles'
-SITENAME = 'Escribo las cosas que no quiero olvidar.'
+SITENAME = 'Escribo las cosas que no quiero olvidar'
 SITEURL = ''
 
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
@@ -20,7 +20,7 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
 }
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = 'es'
 
@@ -51,14 +51,14 @@ CUSTOM_CSS = 'static/custom.css'
 
 DISPLAY_CATEGORIES_ON_MENU = False
 
-FAVICON = '/content/images/blog/favicon.jpg'
+FAVICON = 'images/blog/favicon.jpg'
 
 ABOUT_ME = """
            Mi nombre es Pablo Rodríguez Robles y estudio Ingeniería Aeroespacial
            """
-AVATAR = '/content/images/blog/profile.jpg'
+AVATAR = 'images/blog/profile.jpg'
 
-BANNER = '/conten/images/blog/banner.png'
+BANNER = 'images/blog/banner.png'
 
 GITHUB_USER = 'pablordrrbl'
 
