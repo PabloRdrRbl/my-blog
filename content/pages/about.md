@@ -5,7 +5,7 @@ Slug: about
 
 ## Sobre el blog / About this blog
 
-La idea es que este sea un espacio donde escribir las cosas que aprendo a diario (ojalá alcance el libro de una entrada a la semana) y que pueden resultar interensantes para algunas personas: en principio es algo que escribo para no olvidarlas yo y para compartirlas con algunos de mis compañeros de clase que pueden estar interesados en los mismos temas.
+La idea es que este sea un espacio donde escribir las cosas que aprendo a diario (ojalá alcance el ritmo de una entrada a la semana) y que pueden resultar interensantes para algunas personas: en principio es algo que escribo para no olvidarlas yo y para compartirlas con algunos de mis compañeros de clase que pueden estar interesados en los mismos temas.
 
 La temática del blog será tanto algunos trucos en plataformas Mac OS/Linux/Unix que facilitan el trabajo, pequeños códigos en Python, Fortran, Julia (u otras cosas que aprenda por el camino) relacionadas con la aeronáutica, alguno de mis otros intereses y puede que experiencias más personales como mi estancia de Erasmus aquí en Alemania.
 
